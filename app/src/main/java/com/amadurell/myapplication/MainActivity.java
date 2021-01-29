@@ -41,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
                     || destination.getId() == R.id.terminisB
                     || destination.getId() == R.id.tiP
                     || destination.getId() == R.id.creacompte
-                    || destination.getId() == R.id.oblidatCiU){
+                    || destination.getId() == R.id.oblidatCiU
+                    || destination.getId() == R.id.ayuda
+                    || destination.getId() == R.id.barra_Menu
+                    || destination.getId() == R.id.perfil
+                    || destination.getId() == R.id.cerca){
                 binding.bottomNavView.setVisibility(View.GONE);
             } else {
                 binding.bottomNavView.setVisibility(View.VISIBLE);

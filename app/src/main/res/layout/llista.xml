@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#606060"
-    tools:context=".Home">
+    tools:context=".Llista">
 
     <ScrollView
         android:id="@+id/scrollView6"
@@ -22,7 +22,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="137dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="34dp"
                 android:text="
 
@@ -43,68 +43,61 @@
             <TextView
                 android:id="@+id/textView10"
                 android:layout_width="390dp"
-                android:layout_height="57dp"
+                android:layout_height="66dp"
                 android:layout_marginTop="34dp"
-                android:text="Lista del contenido más recientes en general:"
+                android:text="Esta es tu lista personal de uso libre:"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/FP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peliculas Favoritas:"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
             <ImageView
+                android:id="@+id/sonic"
+                android:layout_width="246dp"
+                android:layout_height="152dp"
+                android:src="@drawable/sonic" />
+
+            <TextView
+                android:id="@+id/FV"
                 android:layout_width="match_parent"
-                android:layout_height="395dp"
-                android:src="@drawable/fila2" />
+                android:layout_height="41dp"
+                android:gravity="center|left"
+                android:text="Videojuegos Favoritos:"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <ImageView
+                android:id="@+id/minecraft"
+                android:layout_width="246dp"
+                android:layout_height="152dp"
+                android:gravity="start"
+                android:src="@drawable/minecraft" />
+
+            <TextView
+                android:id="@+id/FS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="Series Favoritas:"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="276dp"
-                android:src="@drawable/fila1" />
+                android:id="@+id/simpsons"
+                android:layout_width="246dp"
+                android:layout_height="152dp"
+                android:gravity="start"
+                android:src="@drawable/simpsons" />
 
 
         </LinearLayout>
     </ScrollView>
-
-    <Button
-        android:id="@+id/top"
-        android:layout_width="203dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="607dp"
-        android:background="@drawable/lineasaz"
-        android:text="TOP"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/novetats"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/barrasuperior"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/novetats"
-        android:layout_width="211dp"
-        android:layout_height="65dp"
-        android:background="@drawable/lineasaz"
-        android:text="Novedades"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/top"
-        app:layout_constraintTop_toBottomOf="@+id/barrasuperior" />
-
-    <Button
-        android:id="@+id/genero"
-        android:layout_width="419dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="550dp"
-        android:background="@drawable/lineasaz"
-        android:text="Por géneros"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top" />
 
     <TextView
         android:id="@+id/barrasuperior"
@@ -151,12 +144,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:text="                                                                                                                             "
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="73dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

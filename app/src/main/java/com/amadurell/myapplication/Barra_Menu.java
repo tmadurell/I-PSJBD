@@ -16,21 +16,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.amadurell.myapplication.databinding.HomeBinding;
-import com.amadurell.myapplication.databinding.HorizontalContingutBinding;
+import com.amadurell.myapplication.databinding.BarraMenuBinding;
+
 
 import java.util.List;
 
-public class Home extends Fragment {
+public class Barra_Menu extends Fragment {
 
-    HomeBinding binding;
-    private JuegosViewModel juegosViewModel;
+    BarraMenuBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return (binding = HomeBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = BarraMenuBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -39,42 +38,27 @@ public class Home extends Fragment {
 
         //AQUI VA EL CODIGO
         NavController navController = Navigation.findNavController(view);
-
-        binding.llupa.setOnClickListener(new View.OnClickListener() {
+        binding.salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_n_to_cerca);
+                navController.navigate(R.id.action_barra_Menu_to_home_n);
             }
 
 
         });
-        binding.top.setOnClickListener(new View.OnClickListener() {
+        binding.ayuda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_n_to_home_TOP);
+                navController.navigate(R.id.action_barra_Menu_to_ayuda);
             }
 
 
         });
-        binding.genero.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_home_n_to_home_Genere);
-            }
 
 
-        });
-        binding.barrasuperior.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_home_n_to_barra_Menu);
-            }
 
-    });
+
+        }
+
 
     }
-
-
-
-
-}

@@ -72,7 +72,20 @@
         android:id="@+id/home_n"
         android:name="com.amadurell.myapplication.Home"
         android:label="home"
-        tools:layout="@layout/home" />
+        tools:layout="@layout/home" >
+        <action
+            android:id="@+id/action_home_n_to_cerca"
+            app:destination="@id/cerca" />
+        <action
+            android:id="@+id/action_home_n_to_home_TOP"
+            app:destination="@id/home_TOP" />
+        <action
+            android:id="@+id/action_home_n_to_home_Genere"
+            app:destination="@id/home_Genere" />
+        <action
+            android:id="@+id/action_home_n_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+    </fragment>
     <fragment
         android:id="@+id/matrix"
         android:name="com.amadurell.myapplication.Matrix"
@@ -215,5 +228,232 @@
         android:id="@+id/home_Videojocs"
         android:name="com.amadurell.myapplication.Home_Videojocs"
         android:label="home_videojocs"
-        tools:layout="@layout/home_videojocs" />
+        tools:layout="@layout/home_videojocs" >
+        <action
+            android:id="@+id/action_home_Videojocs_to_cerca"
+            app:destination="@id/cerca" />
+        <action
+            android:id="@+id/action_home_Videojocs_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+        <action
+            android:id="@+id/action_home_Videojocs_to_home_Videojocs_P"
+            app:destination="@id/home_Videojocs_P" />
+    </fragment>
+    <fragment
+        android:id="@+id/cerca"
+        android:name="com.amadurell.myapplication.Cerca"
+        android:label="cerca"
+        tools:layout="@layout/cerca" >
+        <action
+            android:id="@+id/action_cerca_to_home_n"
+            app:destination="@id/home_n" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_TOP"
+        android:name="com.amadurell.myapplication.Home_TOP"
+        android:label="home_n_top"
+        tools:layout="@layout/home_n_top" >
+        <action
+            android:id="@+id/action_home_TOP_to_home_n"
+            app:destination="@id/home_n" />
+        <action
+            android:id="@+id/action_home_TOP_to_home_Genere"
+            app:destination="@id/home_Genere" />
+        <action
+            android:id="@+id/action_home_TOP_to_cerca"
+            app:destination="@id/cerca" />
+        <action
+            android:id="@+id/action_home_TOP_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Genere"
+        android:name="com.amadurell.myapplication.Home_Genere"
+        android:label="home__genere"
+        tools:layout="@layout/home_genere" >
+        <action
+            android:id="@+id/action_home_Genere_to_home_TOP"
+            app:destination="@id/home_TOP" />
+        <action
+            android:id="@+id/action_home_Genere_to_home_n"
+            app:destination="@id/home_n" />
+        <action
+            android:id="@+id/action_home_Genere_to_cerca"
+            app:destination="@id/cerca" />
+        <action
+            android:id="@+id/action_home_Genere_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/llista"
+        android:name="com.amadurell.myapplication.Llista"
+        android:label="llista"
+        tools:layout="@layout/llista" >
+        <action
+            android:id="@+id/action_llista_to_sonicinfo"
+            app:destination="@id/sonicinfo" />
+        <action
+            android:id="@+id/action_llista_to_minecraftinfo"
+            app:destination="@id/minecraftinfo" />
+        <action
+            android:id="@+id/action_llista_to_simpsonsinfo"
+            app:destination="@id/simpsonsinfo" />
+        <action
+            android:id="@+id/action_llista_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Pelicules"
+        android:name="com.amadurell.myapplication.Home_Pelicules"
+        android:label="home__pelicules"
+        tools:layout="@layout/home_pelicules" >
+        <action
+            android:id="@+id/action_home_Pelicules_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+        <action
+            android:id="@+id/action_home_Pelicules_to_home_Peliculas_TOP"
+            app:destination="@id/home_Peliculas_TOP" />
+        <action
+            android:id="@+id/action_home_Pelicules_to_home_Peliculas_TOP2"
+            app:destination="@id/home_Peliculas_TOP" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Series"
+        android:name="com.amadurell.myapplication.Home_Series"
+        android:label="home__series"
+        tools:layout="@layout/home_series" >
+        <action
+            android:id="@+id/action_home_Series_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+        <action
+            android:id="@+id/action_home_Series_to_home_TOP_Series"
+            app:destination="@id/home_Series_TOP" />
+        <action
+            android:id="@+id/action_home_Series_to_home_Series_Genere"
+            app:destination="@id/home_Series_Genere" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonicinfo"
+        android:name="com.amadurell.myapplication.Sonic"
+        android:label="sonic"
+        tools:layout="@layout/sonic" >
+        <action
+            android:id="@+id/action_sonicinfo_to_llista"
+            app:destination="@id/llista" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonic_No"
+        android:name="com.amadurell.myapplication.Sonic_No"
+        android:label="sonic_no"
+        tools:layout="@layout/sonic_no" >
+        <action
+            android:id="@+id/action_sonic_No_to_sonicinfo"
+            app:destination="@id/sonicinfo" />
+        <action
+            android:id="@+id/action_sonic_No_to_llista"
+            app:destination="@id/llista" />
+    </fragment>
+    <fragment
+        android:id="@+id/simpsonsinfo"
+        android:name="com.amadurell.myapplication.Simpsons"
+        android:label="simpsons"
+        tools:layout="@layout/simpsons" >
+        <action
+            android:id="@+id/action_simpsonsinfo_to_simpsons_No"
+            app:destination="@id/simpsons_No" />
+    </fragment>
+    <fragment
+        android:id="@+id/simpsons_No"
+        android:name="com.amadurell.myapplication.Simpsons_No"
+        android:label="simpsons_no"
+        tools:layout="@layout/simpsons__no" >
+        <action
+            android:id="@+id/action_simpsons_No_to_simpsonsinfo"
+            app:destination="@id/simpsonsinfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/minecraftinfo"
+        android:name="com.amadurell.myapplication.Minecraft"
+        android:label="minecraft"
+        tools:layout="@layout/minecraft" >
+        <action
+            android:id="@+id/action_minecraftinfo_to_minecraft_No"
+            app:destination="@id/minecraft_No" />
+    </fragment>
+    <fragment
+        android:id="@+id/minecraft_No"
+        android:name="com.amadurell.myapplication.Minecraft_No"
+        android:label="minecraft_no"
+        tools:layout="@layout/minecraft__no" >
+        <action
+            android:id="@+id/action_minecraft_No_to_minecraftinfo"
+            app:destination="@id/minecraftinfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayuda"
+        android:name="com.amadurell.myapplication.Ayuda"
+        android:label="ayuda"
+        tools:layout="@layout/ayuda" >
+        <action
+            android:id="@+id/action_ayuda_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.amadurell.myapplication.Perfil"
+        android:label="perfil"
+        tools:layout="@layout/perfil" >
+        <action
+            android:id="@+id/action_perfil_to_barra_Menu"
+            app:destination="@id/barra_Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/barra_Menu"
+        android:name="com.amadurell.myapplication.Barra_Menu"
+        android:label="barra__menu"
+        tools:layout="@layout/barra__menu" >
+        <action
+            android:id="@+id/action_barra_Menu_to_ayuda"
+            app:destination="@id/ayuda" />
+        <action
+            android:id="@+id/action_barra_Menu_to_perfil"
+            app:destination="@id/perfil" />
+        <action
+            android:id="@+id/action_barra_Menu_to_home_n"
+            app:destination="@id/home_n" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Series_Genere"
+        android:name="com.amadurell.myapplication.Home_Series_Genere"
+        android:label="home_series_genere"
+        tools:layout="@layout/home_series_genere" >
+        <action
+            android:id="@+id/action_home_Series_Genere_to_home_Series_TOP"
+            app:destination="@id/home_Series_TOP" />
+        <action
+            android:id="@+id/action_home_Series_Genere_to_home_Series"
+            app:destination="@id/home_Series" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Series_TOP"
+        android:name="com.amadurell.myapplication.home_TOP_Series"
+        android:label="home_series_top"
+        tools:layout="@layout/home_top_series" >
+        <action
+            android:id="@+id/action_home_Series_TOP_to_home_Series_Genere"
+            app:destination="@id/home_Series_Genere" />
+        <action
+            android:id="@+id/action_home_Series_TOP_to_home_Series"
+            app:destination="@id/home_Series" />
+    </fragment>
+    <fragment
+        android:id="@+id/home_Peliculas_TOP"
+        android:name="com.amadurell.myapplication.Home_Peliculas_TOP"
+        android:label="home_peliculas_top"
+        tools:layout="@layout/home_peliculas_top" />
+    <fragment
+        android:id="@+id/home_Videojocs_P"
+        android:name="com.amadurell.myapplication.Home_Videojocs_P"
+        android:label="home_videojocs_p"
+        tools:layout="@layout/home_videojocs_p" />
 </navigation>

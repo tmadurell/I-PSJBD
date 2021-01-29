@@ -4,7 +4,7 @@
 
     <item
         android:title="Búsqueda"
-        android:id="@+id/cerca"
+        android:id="@+id/cercar"
         android:icon="@drawable/ic_launcher_foreground"
         app:actionViewClass="android.widget.SearchView"
         app:showAsAction="ifRoom|withText|collapseActionView"

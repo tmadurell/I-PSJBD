@@ -16,21 +16,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.amadurell.myapplication.databinding.HomeVideojocsBinding;
+import com.amadurell.myapplication.databinding.HomeVideojocsPBinding;
 import com.amadurell.myapplication.databinding.HorizontalContingutBinding;
 
 import java.util.List;
 
-public class Home_Videojocs extends Fragment {
+public class Home_Videojocs_P extends Fragment {
 
-    HomeVideojocsBinding binding;
+    HomeVideojocsPBinding binding;
     private JuegosViewModel juegosViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return (binding = HomeVideojocsBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = HomeVideojocsPBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -46,7 +46,7 @@ public class Home_Videojocs extends Fragment {
 
 
         JuegosNewAdapter juegosNewAdapter = new JuegosNewAdapter();
-
+        binding.recyclerViewNew.setAdapter(juegosNewAdapter);
 
         juegosViewModel.obtenerJuegosNuevos().observe(getViewLifecycleOwner(), albums -> {
             juegosNewAdapter.setAlbumList(albums);
