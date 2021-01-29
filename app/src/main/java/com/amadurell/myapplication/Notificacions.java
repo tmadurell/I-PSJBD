@@ -12,6 +12,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.amadurell.myapplication.databinding.NotificacionsBinding;
+import com.bumptech.glide.Glide;
 
 
 public class Notificacions extends Fragment {
@@ -29,6 +30,8 @@ public class Notificacions extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
+
+        Glide.with(Notificacions.this).load(R.drawable.boton).into(binding.boto);
 
         binding.estabien.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.amadurell.myapplication.databinding.IntroduccioyconsellsBinding;
 
@@ -30,10 +31,25 @@ public class IntroduccioyConsells extends Fragment {
 
         navController = Navigation.findNavController(view);
 
-        binding.home.setOnClickListener(new View.OnClickListener() {
+
+        binding.viewPager.setAdapter(new FragmentStateAdapter(this) {
+            @NonNull
             @Override
-            public void onClick(View view) {
-                navController.navigate(R.id.action_introduccioyConsells_to_home_n);
+            public Fragment createFragment(int position) {
+                switch (position) {
+                    case 0: default:
+                        return new Consell1();
+                    case 1:
+                        return new Consell1A();
+                    case 2:
+                        return new Consell1B();
+                    case 3:
+                        return new Consell1C();
+                }
+            }
+            @Override
+            public int getItemCount() {
+                return 4;
             }
         });
     }

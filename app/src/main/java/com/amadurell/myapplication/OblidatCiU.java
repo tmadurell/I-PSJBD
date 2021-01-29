@@ -12,6 +12,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.amadurell.myapplication.databinding.OblidatCiUBinding;
+import com.bumptech.glide.Glide;
 
 
 public class OblidatCiU extends Fragment {
@@ -24,11 +25,14 @@ public class OblidatCiU extends Fragment {
                              Bundle savedInstanceState) {
         return (binding = OblidatCiUBinding.inflate(inflater, container, false)).getRoot();    }
 
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
+
+        Glide.with(OblidatCiU.this).load(R.drawable.key).into(binding.clau);
 
         binding.Confirmo.setOnClickListener(new View.OnClickListener() {
             @Override

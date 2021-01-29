@@ -211,4 +211,9 @@
             android:id="@+id/action_terminisB_to_tiP"
             app:destination="@id/tiP" />
     </fragment>
+    <fragment
+        android:id="@+id/home_Videojocs"
+        android:name="com.amadurell.myapplication.Home_Videojocs"
+        android:label="home_videojocs"
+        tools:layout="@layout/home_videojocs" />
 </navigation>

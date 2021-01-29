@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.amadurell.myapplication.databinding.ComptesBinding;
+import com.bumptech.glide.Glide;
 
 public class Comptes extends Fragment {
 
@@ -32,6 +33,9 @@ public class Comptes extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         navController = Navigation.findNavController(view);
+
+        Glide.with(Comptes.this).load(R.drawable.bbdd).into(binding.pc);
+
         binding.iniciarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

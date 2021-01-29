@@ -13,19 +13,25 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.amadurell.myapplication.databinding.ComptesBinding;
+import com.bumptech.glide.Glide;
+
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import com.amadurell.myapplication.databinding.BenvingutsBinding;
+
 
 public class Benvinguts extends Fragment {
 
     NavController navController;
     Arranque arranque;
+    private BenvingutsBinding binding;
     Executor executor = Executors.newSingleThreadExecutor();
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.benvinguts, container, false);
+        return (binding = BenvingutsBinding.inflate(inflater, container, false)).getRoot();
     }
 
 
@@ -34,6 +40,8 @@ public class Benvinguts extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         arranque = new ViewModelProvider(requireActivity()).get(Arranque.class);
         navController = Navigation.findNavController(view);
+
+        Glide.with(Benvinguts.this).load(R.drawable.loading).into(binding.carregant);
 
         arranque.finishedLoading.observe(getViewLifecycleOwner(), new Observer<Boolean>() {
             @Override

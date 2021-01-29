@@ -65,7 +65,7 @@ series y videojuegos."
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/carregant"
+        android:id="@+id/boto"
         android:layout_width="230dp"
         android:layout_height="316dp"
         android:layout_marginBottom="100dp"
