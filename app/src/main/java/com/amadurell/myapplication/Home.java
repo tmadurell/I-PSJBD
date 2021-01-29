@@ -64,7 +64,7 @@ public class Home extends Fragment {
 
 
         });
-        binding.barrasuperior.setOnClickListener(new View.OnClickListener() {
+        binding.barritas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 navController.navigate(R.id.action_home_n_to_barra_Menu);

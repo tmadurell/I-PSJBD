@@ -39,7 +39,44 @@ public class Home_Videojocs extends Fragment {
 
         //AQUI VA EL CODIGO
         NavController navController = Navigation.findNavController(view);
+        binding.genero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_to_home_Videojocs_G);
+            }
 
+
+        });
+        binding.top.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_to_home_Videojocs_T);
+            }
+
+
+        });
+        binding.plataforma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_to_home_Videojocs_P);
+            }
+
+
+        });
+        binding.barritas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_to_barra_Menu);
+            }
+
+        });
+        binding.llupa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_to_cerca);
+            }
+
+        });
         juegosViewModel = new ViewModelProvider(this).get(JuegosViewModel.class);
 
 

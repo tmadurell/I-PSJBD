@@ -16,21 +16,20 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.amadurell.myapplication.databinding.HomeSeriesBinding;
-import com.amadurell.myapplication.databinding.HorizontalContingutBinding;
+import com.amadurell.myapplication.databinding.HomeVideojocsTBinding;
 
 import java.util.List;
 
-public class Home_Series extends Fragment {
+public class Home_Videojocs_T extends Fragment {
 
-    HomeSeriesBinding binding;
+    HomeVideojocsTBinding binding;
     private JuegosViewModel juegosViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return (binding = HomeSeriesBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = HomeVideojocsTBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -40,18 +39,10 @@ public class Home_Series extends Fragment {
         //AQUI VA EL CODIGO
         NavController navController = Navigation.findNavController(view);
 
-        binding.llupa.setOnClickListener(new View.OnClickListener() {
+        binding.novetats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_cerca);
-            }
-
-
-        });
-        binding.top.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_home_TOP_Series);
+                navController.navigate(R.id.action_home_Videojocs_T_to_home_Videojocs);
             }
 
 
@@ -59,7 +50,15 @@ public class Home_Series extends Fragment {
         binding.genero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_home_Series_Genere);
+                navController.navigate(R.id.action_home_Videojocs_T_to_home_Videojocs_G);
+            }
+
+
+        });
+        binding.plataforma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_T_to_home_Videojocs_P);
             }
 
 
@@ -67,13 +66,22 @@ public class Home_Series extends Fragment {
         binding.barritas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_barra_Menu);
+                navController.navigate(R.id.action_home_Videojocs_T_to_barra_Menu);
+            }
+
+        });
+        binding.llupa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Videojocs_T_to_cerca);
             }
 
         });
 
-    }
 
+
+
+    }
 
 
 

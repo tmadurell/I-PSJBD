@@ -48,48 +48,54 @@
                 android:text="Lista del contenido en general por géneros:"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
+
             <TextView
                 android:id="@+id/titul"
                 android:layout_width="390dp"
-                android:layout_height="57dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="34dp"
-                android:text="Lista del contenido en general por géneros:"
+                android:text="Animación:"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/filaa" />
+
             <TextView
                 android:id="@+id/titul1"
                 android:layout_width="390dp"
-                android:layout_height="57dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="34dp"
-                android:text="Lista del contenido en general por géneros:"
+                android:text="Videojuegos:"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="276dp"
+                android:layout_height="wrap_content"
                 android:src="@drawable/filav" />
+
             <TextView
                 android:id="@+id/titulm"
                 android:layout_width="390dp"
-                android:layout_height="57dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="34dp"
-                android:text="Lista del contenido en general por géneros:"
+                android:text="Marvel:"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="276dp"
+                android:layout_height="210dp"
                 android:src="@drawable/filam" />
+
             <TextView
                 android:id="@+id/tituldc"
                 android:layout_width="390dp"
                 android:layout_height="57dp"
                 android:layout_marginTop="34dp"
-                android:text="Lista del contenido en general por géneros:"
+                android:text="DC Comics:"
                 android:textColor="@color/black"
                 android:textSize="25sp" />
             <ImageView

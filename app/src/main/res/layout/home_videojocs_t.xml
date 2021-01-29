@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#606060"
-    tools:context=".Home_Videojocs">
-    <ScrollView
-        android:id="@+id/scrollView6"
-        android:layout_width="417dp"
-        android:layout_height="664dp"
-        android:layout_centerHorizontal="true"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="67dp">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#606060"
+tools:context=".Home_Videojocs_T">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+<ScrollView
+    android:id="@+id/scrollView6"
+    android:layout_width="417dp"
+    android:layout_height="664dp"
+    android:layout_centerHorizontal="true"
+    tools:layout_editor_absoluteX="-5dp"
+    tools:layout_editor_absoluteY="67dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="137dp"
-                android:layout_marginTop="34dp"
-                android:text="
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:layout_marginTop="34dp"
+            android:text="
 
 
 
@@ -36,31 +37,37 @@
 
 
  "
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="390dp"
-                android:layout_height="41dp"
-                android:layout_marginTop="34dp"
-                android:text="Lista de novedades en videojuegos:"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="34dp"
+            android:text="Las 10 videojuegos más populares en su país:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="395dp"
-                android:src="@drawable/fila2" />
+        <ImageView
+            android:layout_width="414dp"
+            android:layout_height="395dp"
+            android:src="@drawable/topg1" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="276dp"
-                android:src="@drawable/fila1" />
+        <ImageView
+            android:layout_width="414dp"
+            android:layout_height="395dp"
+            android:src="@drawable/topg2" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="495dp"
+            android:src="@drawable/topg3" />
 
 
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>
+
     <Button
         android:id="@+id/top"
         android:layout_width="204dp"

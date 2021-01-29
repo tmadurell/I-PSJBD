@@ -16,21 +16,21 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
-import com.amadurell.myapplication.databinding.HomeSeriesBinding;
+import com.amadurell.myapplication.databinding.HomeSeriesTopBinding;
 import com.amadurell.myapplication.databinding.HorizontalContingutBinding;
 
 import java.util.List;
 
-public class Home_Series extends Fragment {
+public class Home_Series_TOP extends Fragment {
 
-    HomeSeriesBinding binding;
+    HomeSeriesTopBinding binding;
     private JuegosViewModel juegosViewModel;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return (binding = HomeSeriesBinding.inflate(inflater, container, false)).getRoot();
+        return (binding = HomeSeriesTopBinding.inflate(inflater, container, false)).getRoot();
     }
 
     @Override
@@ -43,15 +43,7 @@ public class Home_Series extends Fragment {
         binding.llupa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_cerca);
-            }
-
-
-        });
-        binding.top.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_home_TOP_Series);
+                navController.navigate(R.id.action_home_Series_TOP_to_cerca);
             }
 
 
@@ -59,7 +51,15 @@ public class Home_Series extends Fragment {
         binding.genero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_home_Series_Genere);
+                navController.navigate(R.id.action_home_Series_TOP_to_home_Series_Genere);
+            }
+
+
+        });
+        binding.novetats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_home_Series_TOP_to_home_Series);
             }
 
 
@@ -67,7 +67,7 @@ public class Home_Series extends Fragment {
         binding.barritas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navController.navigate(R.id.action_home_Series_to_barra_Menu);
+                navController.navigate(R.id.action_home_Series_TOP_to_cerca);
             }
 
         });

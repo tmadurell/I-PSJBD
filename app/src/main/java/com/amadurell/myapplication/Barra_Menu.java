@@ -55,7 +55,14 @@ public class Barra_Menu extends Fragment {
 
         });
 
+        binding.perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_barra_Menu_to_perfil);
+            }
 
+
+        });
 
 
         }
