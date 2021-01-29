@@ -77,7 +77,7 @@ tools:context=".Iniciarsessio">
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/iniciarSesion"
+        android:id="@+id/iniciarsesion"
 
         android:layout_width="214dp"
         android:layout_height="51dp"

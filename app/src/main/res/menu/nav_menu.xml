@@ -19,7 +19,7 @@
     android:icon="@drawable/tvi"
     android:title="Series TV" />
 <item
-    android:id="@+id/home_videojocs"
+    android:id="@+id/home_Videojocs"
     android:icon="@drawable/game"
     android:title="Videojuegos" />
 </menu>

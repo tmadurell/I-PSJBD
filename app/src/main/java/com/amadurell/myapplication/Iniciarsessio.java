@@ -30,7 +30,7 @@ public class Iniciarsessio extends Fragment {
 
         navController = Navigation.findNavController(view);
 
-        binding.iniciarSesion.setOnClickListener(new View.OnClickListener() {
+        binding.iniciarsesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 navController.navigate(R.id.action_iniciarsessio_to_home_n);
